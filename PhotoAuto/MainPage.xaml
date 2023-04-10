@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:PhotoAuto"
+             xmlns:t="clr-namespace:TreeView.Maui.Controls;assembly=TreeView.Maui"
+             x:Class="PhotoAuto.MainPage">
+    <ContentPage.BindingContext>
+            <local:MainPageViewModel />
+        </ContentPage.BindingContext>
+        <ContentPage.Content>
+
+            <ScrollView>
+                <StackLayout>
+
+                    <VerticalStackLayout>
+                    <HorizontalStackLayout>
+                        <Button x:Name="TakePhotpB" Text="Take Photo" Clicked="OnTakePhotoClicked" Margin="10"></Button>
+                        <Entry Placeholder="Photo Name" Margin="10" x:Name="CreatePhotoName" FontSize="Large"></Entry>
+                        <Entry Placeholder="Foder To Save" Margin="10" x:Name="FolderToSave" FontSize="Large"></Entry>
+                    </HorizontalStackLayout>
+                    <HorizontalStackLayout>
+                        <Button x:Name="DeletePhotpB" Text="Delete Photo" Clicked="ondeletefileclick" Margin="10"></Button>
+                        <Entry Placeholder="Photo Name" Margin="10" x:Name="DeletePhotoName" FontSize="Large"></Entry>
+                        <Entry Placeholder="Foder To Save" Margin="10" x:Name="SaveFolder" FontSize="Large"></Entry>
+                    </HorizontalStackLayout>
+                    <HorizontalStackLayout>
+                        <Button x:Name="CreateFolderB" Text="Cretae Folder" Clicked="onflodercreateclick" Margin="10"></Button>
+                        <Entry Placeholder="Folder Name" Margin="10" x:Name="CreateFolderName" FontSize="Large"></Entry>
+                    </HorizontalStackLayout>
+                    <HorizontalStackLayout>
+                        <Button x:Name="DeleteFolderB" Text="Delete Folder" Clicked="onfloderDeleteclick" Margin="10"></Button>
+                        <Entry Placeholder="Folder Name" Margin="10" x:Name="DeleteFolderName" FontSize="Large"></Entry>
+                    </HorizontalStackLayout>
+                    <!--<Button Text="Randomize Names" Command="{Binding RandomizeNamesCommand}" />
+                        <Button Text="Switch IsLeaf" Command="{Binding SwitchIsLeafCommand}" />-->
+                </VerticalStackLayout>
+
+                    <t:TreeView ItemsSource="{Binding Nodes}">
+                    </t:TreeView>
+                </StackLayout>
+            </ScrollView>
+
+        </ContentPage.Content>
+    </ContentPage>

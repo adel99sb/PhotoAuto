@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33403.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhotoAuto", "PhotoAuto\PhotoAuto.csproj", "{5EEB7E44-CF41-4DF7-B29D-4D6BAF5A5EE0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TreeView.Maui", "TreeView.Maui\TreeView.Maui.csproj", "{0041DB11-2C2B-4834-BAFD-F1E0F87422F3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5EEB7E44-CF41-4DF7-B29D-4D6BAF5A5EE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EEB7E44-CF41-4DF7-B29D-4D6BAF5A5EE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EEB7E44-CF41-4DF7-B29D-4D6BAF5A5EE0}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{5EEB7E44-CF41-4DF7-B29D-4D6BAF5A5EE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EEB7E44-CF41-4DF7-B29D-4D6BAF5A5EE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EEB7E44-CF41-4DF7-B29D-4D6BAF5A5EE0}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{0041DB11-2C2B-4834-BAFD-F1E0F87422F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0041DB11-2C2B-4834-BAFD-F1E0F87422F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0041DB11-2C2B-4834-BAFD-F1E0F87422F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0041DB11-2C2B-4834-BAFD-F1E0F87422F3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2F9AC40C-FE78-4022-A2DC-1AD719EF303F}
+	EndGlobalSection
+EndGlobal
