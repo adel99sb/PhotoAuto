@@ -16,12 +16,12 @@
                     <HorizontalStackLayout>
                         <Button x:Name="TakePhotpB" Text="Take Photo" Clicked="OnTakePhotoClicked" Margin="10"></Button>
                         <Entry Placeholder="Photo Name" Margin="10" x:Name="CreatePhotoName" FontSize="Large"></Entry>
-                        <Entry Placeholder="Foder To Save" Margin="10" x:Name="FolderToSave" FontSize="Large"></Entry>
+                        <Entry Placeholder="Folder To Save" Margin="10" x:Name="FolderToSave" FontSize="Large"></Entry>
                     </HorizontalStackLayout>
                     <HorizontalStackLayout>
                         <Button x:Name="DeletePhotpB" Text="Delete Photo" Clicked="ondeletefileclick" Margin="10"></Button>
                         <Entry Placeholder="Photo Name" Margin="10" x:Name="DeletePhotoName" FontSize="Large"></Entry>
-                        <Entry Placeholder="Foder To Save" Margin="10" x:Name="SaveFolder" FontSize="Large"></Entry>
+                        <Entry Placeholder="Save Folder" Margin="10" x:Name="SaveFolder" FontSize="Large"></Entry>
                     </HorizontalStackLayout>
                     <HorizontalStackLayout>
                         <Button x:Name="CreateFolderB" Text="Cretae Folder" Clicked="onflodercreateclick" Margin="10"></Button>

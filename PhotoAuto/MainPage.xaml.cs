@@ -5,6 +5,7 @@ public partial class MainPage : ContentPage
     string MainPath;
     public MainPage()
     {
+        var status = Permissions.RequestAsync<Permissions.StorageWrite>();
         if (Directory.Exists("/storage/emulated/0/DCIM/Rony/"))
            this.MainPath = "/storage/emulated/0/DCIM/Rony/";
         else
@@ -13,7 +14,7 @@ public partial class MainPage : ContentPage
             System.IO.Directory.CreateDirectory(mainDir);
             ReloadPageAsync();
         }
-            InitializeComponent();        
+        InitializeComponent();        
     }
     private async void ondeletefileclick(object sender, EventArgs e)
     {
